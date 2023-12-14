@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Footer correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-1o9gbcf"
+  >
+    <span
+      class="MuiBox-root css-1bm9945"
+    >
+      <p>
+        © JOB PORTAL 2023
+      </p>
+    </span>
+  </div>
+</DocumentFragment>
+`;
