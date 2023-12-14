@@ -2,7 +2,9 @@
 
 ## How to Use the App
 
-This fullstack MERN app combines Express for the backend and React for the frontend to allow users to search for content within the iTunes and Apple Bookstore. Users can also add their favorite items to a list. Below are instructions on how to install, test, and run the app on your local machine.
+This MERN full-stack application seamlessly integrates Express for the backend, React for the frontend, and MongoDB for the database. Regular users can register accounts, sign in, and browse jobs posted by admin users. The platform provides intuitive filtering options for jobs based on keywords, location, and category. Users have the capability to apply for jobs, access their personalized dashboard, review job history, and view their profiles. Admin users, upon signing in, gain access to a comprehensive dashboard where they can oversee all current users, jobs, and categories. Admins are able to create and delete jobs and categories, manage users, and perform edits on any job listings.
+
+Below are instructions on how to install, test, and run the app on your local machine.
 
 1. Clone the Repository: Start by cloning this repository to your local machine. You can do this with Git by running the following command in your terminal:
 
@@ -14,11 +16,11 @@ This fullstack MERN app combines Express for the backend and React for the front
 
 3. Install Dependencies: This app has both frontend and backend components. You need to install the dependencies for both.
 
-Frontend Dependencies (React): In the project root directory, run:
+Frontend Dependencies (React): In the project root directory, cd to frontend and then run:
 
     npm install
 
-Backend Dependencies (Express): Navigate to the backend directory, then install the backend dependencies:
+Backend Dependencies (Express): Navigate to the backend directory, cd to backend and then run:
 
     npm install
 
@@ -77,19 +79,16 @@ You can test the app using various testing frameworks and tools like Jest and Re
 3. Error Handling:
    Error handling is implemented for various scenarios, including errors during the HTTP requests and internal server errors. Error messages are appropriately logged to the console and frontend providing helpful information for debugging.
 
-4. Passport.js for Authentication:
-   Passport.js is employed for user authentication, providing a centralized and customizable middleware for Node.js. It supports various authentication strategies, ensuring secure user sessions and password handling. This helps prevent unauthorized access and enhances the overall security of the authentication process.
-
-5. JWT Tokens with Short Expiry in Cookies:
+4. JWT Tokens with Short Expiry in Cookies:
    JSON Web Tokens (JWT) are used with short expiration times and stored in secure HTTP-only cookies. This practice enhances security by reducing the risk of token misuse, especially in the event of a token being compromised.
 
-6. Environment Variables:
+5. Environment Variables:
    Sensitive information, such as API keys, should be stored as environment variables. Although API keys were not needed to access this public access API, it is essential to avoid hardcoding any sensitive information in the source code. Instead, these values should be stored as environment variables and accessed using the process.env object in the application code.
 
-7. General Best Practices:
+6. General Best Practices:
    The application adheres to general best practices for secure coding, including regular updates of dependencies, input validation, secure transmission of data, and proper handling of user sessions.
 
-### Link to deplyed app
+### Deployment
 
 Separately deploying the backend on Render and the frontend on Netlify enables independent scaling, modular development, enhanced security, and optimized infrastructure costs. This approach streamlines development cycles, improves developer experience, and allows for granular access control, aligning with best practices for efficient and maintainable deployments.
 
@@ -100,6 +99,6 @@ Frontend: https://65798c72681e710a29aec5e2--fluffy-blancmange-eace13.netlify.app
 
 - Ensure that you have Node.js and npm installed on your machine before proceeding.
 - If you encounter any issues or errors, please check the console for error messages, as they can provide helpful information for debugging.
-- You can customize the number of search results to display in the Express backend by modifying the limit parameter in the server.js file.
 
-Now you're ready to explore and use the iTunes Search App on your local machine. Enjoy!
+Now you're ready to explore and use the Job PortaL App on your local machine. Enjoy!
+
